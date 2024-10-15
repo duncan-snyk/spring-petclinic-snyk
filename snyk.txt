@@ -1,2 +1,3 @@
 Placeholder for instructions on how to use Snyk with this project
 Trigger a build
+Add Snyk Action
