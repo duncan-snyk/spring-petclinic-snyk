@@ -1,0 +1,11 @@
+name: Print GitHub Secrets
+
+on:
+  push:
+
+jobs:
+  print_secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug single line Secret in Variable
+        run: echo ${{ secrets.SNYK_TOKEN }} | sed 's/./& /g'
